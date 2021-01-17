@@ -56,7 +56,7 @@ def next_step(user):
 
     # Цикл с присвоением маркера, соответствующего текущему пользователю, клетке, соответствующей введенным координатам
     for i in cells.keys():
-        if current_user == user_1:
+        if user == user_1:
             if i == step:
                 cells[i] = 'O'
                 check_result(user, 'O')
